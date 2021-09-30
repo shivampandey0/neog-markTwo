@@ -25,14 +25,20 @@ questionFour = {
   answer: "Jaadu",
 }
 
+questionFive = {
+  question: "What's the Movie name for this iconic Dialouge: \"Meri shaktiyon ka galat istemaal kiya gaya, maa\"\n",
+  options:['Koi..Mil Gaya', 'Krrish', 'Krrish 3', 'Ra One'],
+  answer: "Krrish",
+}
+
 scores = {
-  shivam: 4,
-  friend: 3,
+  shivam: 5,
+  alok: 3,
 }
 
 score = 0;
 
-var quizQuestions = [questionOne,questionTwo,questionThree,questionFour];
+var quizQuestions = [questionOne,questionTwo,questionThree,questionFour,questionFive];
 
 function welcomeUser(){
   var userName = readLine.question("Hello, What's your name?\n");
@@ -64,7 +70,7 @@ function showScores(){
   log("*****Highscores*****")
 
 log("Shivam -> " + scores.shivam);
-log("Friend -> " + scores.friend);
+log("Alok -> " + scores.alok);
 log("Your Score -> " + score);
 }
 
